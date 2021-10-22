@@ -1,0 +1,18 @@
+#HGet user input and store it as a string data type in the variable called user_input
+print("Please enter your unique string combination(Hint: NO NUMBERS)")
+user_input = str(input())
+#converted_str is an empty string where i am going to store the converted answer which will be converted for the end result
+converted_str = ''
+
+
+#I opted to go with for loop to iterate through the string input and convert the string.
+#storing them in final_str
+for i in (user_input):
+    if i.isupper() == True:
+        converted_str += i.lower()
+    elif i.islower() == True:
+        converted_str += i.upper()
+
+#Now I will print final_str (the converted string) as my final output
+print(converted_str)
+print(user_input)
